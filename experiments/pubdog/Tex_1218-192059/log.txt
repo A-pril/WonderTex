@@ -1,0 +1,10 @@
+2024-12-18 19:20:59 Saving to /data/xuqi/xuqi/code/WonderTex/experiments/pubdog/Tex_1218-192059
+2024-12-18 19:20:59 Finish camera pose
+2024-12-18 19:20:59 Set camera pose: [(0, 0), (0, 90), (0, 180), (0, 270)]
+2024-12-18 19:21:08 Finish mesh load
+2024-12-18 19:21:17 All camera poses: [(0, 0), (0, 90), (0, 180), (0, 270), (-30.0, 342.0), (-30.0, 20.8), (12.5, 166.6), (25.5, 354.2), (30.0, 210.5), (30.0, 147.2), (17.9, 180.0)]
+2024-12-18 19:21:19 load Multi-view Diffusion Model
+2024-12-18 19:21:22 Finish pipeline load
+2024-12-18 19:21:22 Start InPainting ^_^
+2024-12-18 19:21:45 Finish inpaint pipeline load
+2024-12-18 19:22:05 Finish Painting ^_^

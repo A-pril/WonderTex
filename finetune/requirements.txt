@@ -1,0 +1,14 @@
+accelerate>=0.16.0
+torch==2.3.0
+torchvision
+transformers==4.28.1
+datasets
+ftfy
+tensorboard
+Jinja2
+peft==0.7.0
+diffusers[torch]==0.10.2
+xformers
+bitsandbytes==0.35.4
+omegaconf==2.2.3
+tensorboard

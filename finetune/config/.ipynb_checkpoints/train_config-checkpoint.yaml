@@ -1,0 +1,22 @@
+gradient_checkpointing: True
+mixed_precision: "fp16"
+pretrained_model_name_or_path: "/root/pre-trained/stable-diffusion-v1-5"
+train_data_dir: "/root/autodl-tmp/objaverse-v1"
+train_json: "/root/autodl-tmp/WonderTEX/data_lists/finished_automated_Objaverse_no3Dword.json"
+use_ema: True
+resolution: 512
+train_batch_size: 48
+validation_samples: 16
+validate_batch_size: 4 # 16 -> 4
+gradient_accumulation_steps: 4
+max_train_steps: 30000 
+learning_rate: 1e-05 
+max_grad_norm: 1 
+validation_steps: 200 # 100 -> 200
+lr_scheduler: "constant" 
+lr_warmup_steps: 0 
+prediction_type: "epsilon"
+output_dir: "./exp" ### need change
+checkpoints_total_limit: 2
+checkpointing_steps: 500
+resume_from_checkpoint: "checkpoint-8500"

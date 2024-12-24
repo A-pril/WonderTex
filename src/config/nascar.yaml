@@ -1,0 +1,19 @@
+mesh: "../shapes/nascar.obj"
+prompt: "A next gen nascar in red." 
+mesh_autouv: True
+
+rgb_view_size: 512
+rgb_tex_size: 1024
+scale: 2.0
+
+init_elev: 0
+min_elev: -10
+max_elev: 30
+
+output: "../experiments/nascar"
+cond_type: "depth"
+inference_steps: 20
+gpu: 1
+diffusion_gpu: 1
+seed: 40288
+grid_diffusion: True

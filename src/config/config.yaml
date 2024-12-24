@@ -1,0 +1,32 @@
+mesh: "../shapes/lucky-cat.obj"
+prompt: "Blue and white pottery style lucky cat with intricate patterns."
+
+sd_model: "/data/xuqi/xuqi/code/SyncMVD/pre-trained/stable-diffusion-v1-5"
+mvd_model: "/data/xuqi/xuqi/code/SyncMVD/pre-trained/stable-diffusion-v1-5"
+dep_ControlNet: "/data/xuqi/xuqi/code/SyncMVD/pre-trained/control_v11f1p_sd15_depth"
+norm_ControlNet: "/data/xuqi/xuqi/code/SyncMVD/pre-trained/control_v11p_sd15_normal"
+hd_ControlNet: "/data/xuqi/xuqi/code/SyncMVD/pre-trained/control_v11f1e_sd15_tile"
+ipait_ControlNet: "/data/xuqi/xuqi/code/SyncMVD/pre-trained/control_v11p_sd15_inpaint"
+
+mesh_autouv: True
+
+rgb_view_size: 512
+rgb_tex_size: 1024
+scale: 1.5
+# no_HD: True
+
+init_elev: 0
+min_elev: -20
+max_elev: 30
+diff_angle: 20
+# eps: 0.05
+# samples: 10
+# weight_limit: 0.15
+
+output: "../experiments/lucky-cat"
+cond_type: "depth"
+inference_steps: 20
+gpu: 7
+diffusion_gpu: 7
+seed: 0
+grid_diffusion: True

@@ -1,0 +1,12 @@
+2024-12-18 18:51:56 Saving to /data/xuqi/xuqi/code/WonderTex/experiments/nascar/Tex_1218-185156
+2024-12-18 18:51:56 Finish camera pose
+2024-12-18 18:51:56 Set camera pose: [(0, 0), (0, 90), (0, 180), (0, 270)]
+2024-12-18 18:52:31 Finish mesh load
+2024-12-18 18:52:57 All camera poses: [(0, 0), (0, 90), (0, 180), (0, 270), (-10.0, 41.7), (-10.0, 219.5), (30.0, 269.7), (-10.0, 147.9), (-10.0, 334.2), (-0.1, 204.2)]
+2024-12-18 18:53:19 load Multi-view Diffusion Model
+2024-12-18 18:53:24 Finish pipeline load
+2024-12-18 18:53:24 Start InPainting ^_^
+2024-12-18 18:53:37 Start HD.
+2024-12-18 18:54:12 Finish HD pipeline load
+2024-12-18 18:54:36 Finish inpaint pipeline load
+2024-12-18 18:54:57 Finish Painting ^_^

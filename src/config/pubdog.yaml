@@ -1,0 +1,20 @@
+mesh: "../shapes/pub-dog-front.obj"
+prompt: "A pubdog."
+mesh_autouv: True
+
+rgb_view_size: 512
+rgb_tex_size: 1024
+scale: 1.5
+no_HD: True
+
+init_elev: 0
+min_elev: -30
+max_elev: 30 
+
+output: "../experiments/pubdog"
+cond_type: "depth"
+inference_steps: 20
+gpu: 1
+diffusion_gpu: 1
+seed: 24
+grid_diffusion: True

@@ -1,0 +1,25 @@
+mesh: "../shapes/lucky-cat.obj"
+prompt: "Blue and white pottery style lucky cat with intricate patterns."
+
+mesh_autouv: True
+
+rgb_view_size: 512
+rgb_tex_size: 1024
+scale: 1.5
+# no_HD: True
+
+init_elev: 0
+min_elev: -20
+max_elev: 30
+diff_angle: 20
+# eps: 0.05
+# samples: 10
+# weight_limit: 0.15
+
+output: "../experiments/lucky-cat"
+cond_type: "depth"
+inference_steps: 20
+gpu: 1
+diffusion_gpu: 1
+seed: 0
+grid_diffusion: True

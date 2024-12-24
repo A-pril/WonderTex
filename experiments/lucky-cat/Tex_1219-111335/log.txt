@@ -1,0 +1,13 @@
+2024-12-19 11:13:35 Saving to /data/xuqi/xuqi/code/WonderTex/experiments/lucky-cat/Tex_1219-111335
+2024-12-19 11:13:35 Finish camera pose
+2024-12-19 11:13:35 Set camera pose: [(0, 0), (0, 90), (0, 180), (0, 270)]
+2024-12-19 11:13:44 Finish mesh load
+2024-12-19 11:13:59 All camera poses: [(0, 0), (0, 90), (0, 180), (0, 270), (-20.0, 110.4), (30.0, 6.8), (-20.0, 193.9), (-4.9, 57.9), (-20.0, 89.4), (-1.3, 34.0), (-20.0, 224.3), (-8.0, 337.8), (-14.2, 282.2), (-2.8, 249.4)]
+2024-12-19 11:14:23 load Multi-view Diffusion Model
+2024-12-19 11:14:35 Finish pipeline load
+2024-12-19 11:14:35 Start InPainting ^_^
+2024-12-19 11:14:44 Start HD.
+2024-12-19 11:14:51 load Multi-view Diffusion Model
+2024-12-19 11:14:53 Finish HD pipeline load
+2024-12-19 11:15:21 Finish inpaint pipeline load
+2024-12-19 11:15:48 Finish Painting ^_^
