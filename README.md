@@ -7,7 +7,7 @@ Consistent-and-Seamless Texture Generation with Text-Guided Multi-View Image Dif
 >Text-guided texture generation has been rapidly developed with the proliferation of generative artificial intelligence for creating three-dimensional textured objects. However, existing text-guided texture generation methods often suffer from artifacts such as inconsistent visual appearance across different views, Janus problems and seams in texture maps. To address these issues, a novel text-guided texture generation method, named *WonderTex*, is proposed. It aims to produce high-quality, view-consistent, and seamless texture maps by overcoming the shortcomings of existing texture generation methods. Specifically, we fine-tune a Stable Diffusion model using a large dataset to obtain a multi-view image diffusion model capable of generating a 4-view grid. This model serves as the foundation for producing four consistent views and establishing the base texture through back-projection. Subsequently, an automatic view selection and inpainting strategy is employed to effectively fill and refine the texture maps. Extensive experiments have shown that our method is effective and robust, capable of generating high-qaulity textures with various meshes and prompts, outperforming baseline methods in terms of texture details, view consistency, and other metrics.
 
 ## Setup 📍
-The code is tested on Ubuntu 20.04 LTS with PyTorch  2.0.0 Cuda  11.8 installed. To run our method, you should at least have a NVIDIA GPU with 12 GB RAM (NVIDIA GeForce 4090 Ti works for us).
+The code is tested on **Ubuntu 20.04 LTS** with **PyTorch  2.0.0 Cuda  11.8** installed. To run our method, you should at least have a NVIDIA GPU with 12 GB RAM (NVIDIA GeForce 4090 Ti works for us).
 
 To install, first clone the repository and install PyTorch.
 ```bash
@@ -27,6 +27,9 @@ Then install PyTorch3D through the following URL (change the respective Python, 
 ```bash
 pip install https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py38_cu118_pyt200/download.html
 ```
+
+## Training 🚋
+Our model is trained based on Stable Diffusion v-1.5. The training details can be found in [our paper](https://www.techrxiv.org/users/871216/articles/1258091-wondertex-consistent-and-seamless-texture-generation-with-text-guided-multi-view-image-diffusion-models) and the training [config](finetune/config/train_config.yaml). You can also download our pre-trained Unet from [here](https://drive.google.com/drive/folders/1DIdr32E9S7A30cCxgoNYLfnbfUkep4hn?hl=zh-cn) to replicate a result without training the system.
 
 ## Inference 🚀
 ```bash
