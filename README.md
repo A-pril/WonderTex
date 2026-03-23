@@ -29,13 +29,17 @@ pip install https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py38_cu118
 ```
 
 ## Training 🚋
-Our model is trained based on Stable Diffusion v-1.5. The training details can be found in [our paper](https://www.techrxiv.org/users/871216/articles/1258091-wondertex-consistent-and-seamless-texture-generation-with-text-guided-multi-view-image-diffusion-models) and the training [config](finetune/config/train_config.yaml). You can also download our pre-trained Unet from [here](https://drive.google.com/drive/folders/1DIdr32E9S7A30cCxgoNYLfnbfUkep4hn?hl=zh-cn) to replicate a result without training the system.
+Our model is trained based on **Stable Diffusion v-1.5** using fp16 on **2 NVIDIA L40 GPUs** for **20K steps**, which finishes in approximately **5 days**. The training details can be found in [our paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11434885), [supplementary material](https://ieeexplore.ieee.org/ielx8/2945/4359476/11434885/supp1-3673926.pdf?arnumber=11434885) and the training [config](finetune/config/train_config.yaml). 
+
+But for inference, We use the fine-tuned model of 10K steps. It can be downloaded from [here](https://drive.google.com/drive/folders/1DIdr32E9S7A30cCxgoNYLfnbfUkep4hn?hl=zh-cn) to replicate a result without training the system.
 
 ## Inference 🚀
 ```bash
 python run_experiment.py --config {your config}.yaml
 ```
-Refer to [parse.py](src/parse.py) for the list of arguments and settings you can adjust. You can change these settings by including them in a `.yaml` config file like the [config.yaml](src/config/config.yaml) or passing the related arguments in command line; values specified in command line will overwrite those in config files.
+Refer to [parse.py](src/parse.py) for the list of arguments and settings you can adjust. The average inference time is **1-2 min**.
+
+You can change these settings by including them in a `.yaml` config file like the [config.yaml](src/config/config.yaml) or passing the related arguments in command line; values specified in command line will overwrite those in config files.
 
 Here is an example of lucky-cat with a text prompt.
 ```bash
