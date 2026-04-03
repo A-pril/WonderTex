@@ -54,6 +54,7 @@ python run_texture.py --config ./config/nascar.yaml
 
 
 ## News 🚩
+- 2026.03 Accepted by TVCG.
 - 2024.12 Upload paper and release project.
 
 ## Acknowledgement 💌
@@ -68,10 +69,15 @@ We have partly borrow codes from the following repositories. Many thanks to the 
 ## Citation 🐰
 If you find this repository useful in your project, please cite our work.
 ```
-@article{Xu2024WonderTex,
-  title={WonderTex: Consistent-and-Seamless Texture Generation with Text-Guided Multi-View Image Diffusion Models},
-  author={Xu, Qi and Zhang, Lei and Han, Xiaoguang},
-  journal={arXiv preprint arXiv:2310.15008},
-  year={2024}
-}
+@ARTICLE{11434885,
+  author={Xu, Qi and Han, Xiao-Guang and Zhang, Lei},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={WonderTex: Consistent-and-Seamless Texture Generation with Text-Guided Multi-View Image Diffusion Models}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-12},
+  keywords={Diffusion models;Three-dimensional displays;Solid modeling;Pipelines;Noise reduction;Surface texture;Shape;Image color analysis;Geometry;Neural networks;Text-to-texture;Fine-tuned diffusion model;texture generation;view consistency},
+  doi={10.1109/TVCG.2026.3673926}}
+
 ```
